@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- 
+            -Primary meta tag
+        -->
+        <title>Cook.io - Cooking made easy.</title>
+        <meta name="title" content="Cook.io - Cooking made easy." />
+        <meta
+            name="description"
+            content="This is a recipe application made by codewithsadee"
+        />
+        <!-- 
+            -Favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+        <!-- 
+            -Theme Js
+        -->
+        <script src="./assets/js/theme.js"></script>
+
+        <!-- 
+            -Google Font
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=DM+Serif+Display&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- 
+            -Material icon
+        -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0"
+        />
+
+        <!-- 
+            -Custom css
+        -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- 
+            -Custom js
+        -->
+        <script src="./assets/js/global.js" type="module"></script>
+        <script src="./assets/js/home.js" type="module"></script>
+    </head>
+
+    <body>
+        <header class="header" data-header>
+            <a href="/" class="logo">
+                <img
+                    src="./assets/images/logo-light.svg"
+                    alt="Cook.io"
+                    class="logo__light"
+                    width="156"
+                    height="32"
+                />
+                <img
+                    src="./assets/images/logo-dark.svg"
+                    alt="Cook.io"
+                    class="logo__dark"
+                    width="156"
+                    height="32"
+                />
+            </a>
+
+            <nav class="navbar">
+                <li>
+                    <a
+                        href="/"
+                        class="navbar__link title__small has__state active"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a href="/" class="navbar__link title__small has__state"
+                        >Recipes</a
+                    >
+                </li>
+            </nav>
+
+            <button
+                class="icon__btn theme__switch has__state"
+                aria-pressed="false"
+                aria-label="Toggle light and dark theme"
+                data-theme-btn
+            >
+                <span
+                    class="material-symbols-outlined light__icon"
+                    aria-hidden="true"
+                    >light_mode</span
+                >
+                <span
+                    class="material-symbols-outlined dark__icon"
+                    aria-hidden="true"
+                    >dark_mode</span
+                >
+            </button>
+
+            <a href="./saved-recipes.html" class="btn btn__primary has__icon">
+                <span class="material-symbols-outlined" aria-hidden="true"
+                    >book</span
+                >
+                <span class="span">Saved Recipes</span>
+            </a>
+        </header>
+    </body>
+</html>

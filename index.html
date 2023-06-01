@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -73,18 +73,20 @@
             </a>
 
             <nav class="navbar">
-                <li>
-                    <a
-                        href="/"
-                        class="navbar__link title__small has__state active"
-                        >Home</a
-                    >
-                </li>
-                <li>
-                    <a href="/" class="navbar__link title__small has__state"
-                        >Recipes</a
-                    >
-                </li>
+                <ul>
+                    <li>
+                        <a
+                            href="/"
+                            class="navbar__link title__small has__state active"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="/" class="navbar__link title__small has__state"
+                            >Recipes</a
+                        >
+                    </li>
+                </ul>
             </nav>
 
             <button
@@ -92,6 +94,7 @@
                 aria-pressed="false"
                 aria-label="Toggle light and dark theme"
                 data-theme-btn
+                type="button"
             >
                 <span
                     class="material-symbols-outlined light__icon"
@@ -112,5 +115,54 @@
                 <span class="span">Saved Recipes</span>
             </a>
         </header>
+
+        <nav class="nav__movile" aria-label="primary">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="./recipes.html" title="recipe" class="nav__link">
+
+                        <span class="item__icon">                           
+                            <span
+                                class="material-symbols-outlined"
+                                aria-hidden="true"
+                                >lunch_dining
+                            </span
+                        </span>
+
+                        <span class="labe__medium">Saved Recipes</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" title="recipe" aria-current="true" class="nav__link">
+
+                        <span class="item__icon">                           
+                            <span
+                                class="material-symbols-outlined"
+                                aria-hidden="true"
+                                >Home
+                            </span
+                        </span>
+
+                        <span class="labe__medium">Home</span>
+                    </a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="./saved-recipes.html" title="recipe" class="nav__link">
+
+                        <span class="item__icon">                           
+                            <span
+                                class="material-symbols-outlined"
+                                aria-hidden="true"
+                                >book
+                            </span
+                        </span>
+
+                        <span class="labe__medium">book </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </body>
 </html>
